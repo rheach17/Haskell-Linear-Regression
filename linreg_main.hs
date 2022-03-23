@@ -43,7 +43,7 @@ calculateDelta thetas example = t0 + t1 * x - y
     Coefficients (t0, t1) = thetas
     Example (x, y) = example
 
--- For the case where d/dx != 1 and we need to multiply through, do so 
+
 adjustDeltas :: [Float] -> [Example] -> [Float]
 adjustDeltas deltas examples =
   let xs = map (\(Example (x, _)) -> x) examples
